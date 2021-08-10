@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="chart.js/dist/Chart.min.js"></script>
+<script src="chart.js/dist/Chart.extension.js"></script>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color:floralwhite">
+            <div id="col" class="collapse navbar-collapse" >
+                <ul class="navbar-nav me-auto" ">
+                    <li class="nav-item"><h1>Prospect</h1>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active"><B>Home</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><B>About</B></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown"><B>Menu</B></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="#linechart">Product Insight</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#pointchart">Employee Insight</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+               
+                <li class="nav-item">
+                    <a href="login_register.html" class="nav-link"><B>Login/Register</B><i class="bi bi-person-fill"></i></a>
+                </li>
+            </div>  
+        </nav>
+
+        <div id="linechart" class="card">
+            <!-- Card header -->
+            <div class="card-header">
+               <!-- Title -->
+               <h5 class="h3 mb-0">Line chart</h5>
+            </div>
+            <!-- Card body -->
+            <div class="card-body">
+               <div class="chart">
+                  <!-- Chart wrapper -->
+                  <canvas id="chart-line" class="chart-canvas"></canvas>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="pointchart" class="card">
+            <!-- Card header -->
+            <div class="card-header">
+               <!-- Title -->
+               <h5 class="h3 mb-0">Points chart</h5>
+            </div>
+            <!-- Card body -->
+            <div class="card-body">
+               <div class="chart">
+                  <!-- Chart wrapper -->
+                  <canvas id="chart-points" class="chart-canvas"></canvas>
+               </div>
+            </div>
+         </div>
+
+
+
+        <div id="c" class="carousel slide" data-bs-ride="carousel" data-bs-pause="pause">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#c" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#c" data-bs-slide-to="1"></button>
+                <!-- <button type="button" data-bs-target="#c" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#c" data-bs-slide-to="3"></button> -->
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000" >
+                    <img src="images/welcome.jpg" class="d-block w-100" style="height: 300px;" >
+                </div>
+                <div class="carousel-item" data-bs-interval="4000"> 
+                    <img src="images/welcome1.jpg" class="d-block w-100" style="height: 300px;" >
+                    <div class="carousel-caption">Image2</div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="images/3.jpg" class="d-block w-100" style="height: 300px;" >
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.jpg" class="d-block w-100" style="height: 300px;" >
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#c" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#c" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container mt-5" >
+            <div class="row">
+            <div class="card col-4 border-primary">
+             <img src="images/objective2.jfif"  class="card-img-top">
+             <div class="card-body">
+                 <h1 class="card-title">Model S</h1>
+                  <p class="card-text">
+                     
+                  </p>
+                  <div class="card-footer">Prospect</div>
+             </div>
+         </div>
+     
+         <div class="card col-4 border-primary">
+             <img src="images/objective.jpg" class="card-img-top">
+         <div class="card-body">
+             <h1 class="card-title">Model X</h1>
+              <p class="card-text">
+                
+              </p>
+              <div class="card-footer">Prospect</div>
+         </div>
+     </div>
+     <div class="card col-4 border-primary">
+         <img src="images/objective1.jfif"  class="card-img-top">
+         <div class="card-body">
+             <h1 class="card-title">Model 3</h1>
+              <p class="card-text">
+                 
+              </p>
+              <div class="card-footer">Prospect</div>
+         </div>
+     </div>
+     </div>
+        </div>
+    </body>
+</html>
